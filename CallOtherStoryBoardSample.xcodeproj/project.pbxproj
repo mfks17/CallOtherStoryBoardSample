@@ -21,6 +21,8 @@
 		047B2A9D15A08A5E00EFE585 /* Sub1Scene2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B2A9C15A08A5E00EFE585 /* Sub1Scene2ViewController.m */; };
 		047B2AA015A08A7300EFE585 /* Sub2Scene1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B2A9F15A08A7300EFE585 /* Sub2Scene1ViewController.m */; };
 		047B2AA315A08A8800EFE585 /* Sub2Scene2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047B2AA215A08A8800EFE585 /* Sub2Scene2ViewController.m */; };
+		B402676C175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.m in Sources */ = {isa = PBXBuildFile; fileRef = B402676B175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.m */; };
+		B402676E175E42CB00A3C402 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B402676D175E42CB00A3C402 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		047B2A9F15A08A7300EFE585 /* Sub2Scene1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sub2Scene1ViewController.m; sourceTree = "<group>"; };
 		047B2AA115A08A8800EFE585 /* Sub2Scene2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sub2Scene2ViewController.h; sourceTree = "<group>"; };
 		047B2AA215A08A8800EFE585 /* Sub2Scene2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sub2Scene2ViewController.m; sourceTree = "<group>"; };
+		B402676A175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewController_iOS4Compatible.h"; sourceTree = "<group>"; };
+		B402676B175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewController_iOS4Compatible.m"; sourceTree = "<group>"; };
+		B402676D175E42CB00A3C402 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 		0426DAF215A080DC0044BF5D = {
 			isa = PBXGroup;
 			children = (
+				B402676D175E42CB00A3C402 /* Default-568h@2x.png */,
 				0426DB0715A080DC0044BF5D /* CallOtherStoryBoardSample */,
 				0426DB0015A080DC0044BF5D /* Frameworks */,
 				0426DAFE15A080DC0044BF5D /* Products */,
@@ -93,6 +99,8 @@
 		0426DB0715A080DC0044BF5D /* CallOtherStoryBoardSample */ = {
 			isa = PBXGroup;
 			children = (
+				B402676A175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.h */,
+				B402676B175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.m */,
 				047B2A9815A08A4E00EFE585 /* Sub1Scene1ViewController.h */,
 				047B2A9915A08A4E00EFE585 /* Sub1Scene1ViewController.m */,
 				047B2A9B15A08A5E00EFE585 /* Sub1Scene2ViewController.h */,
@@ -179,6 +187,7 @@
 				0426DB1515A080DC0044BF5D /* MainStoryboard.storyboard in Resources */,
 				047B2A9415A0888F00EFE585 /* Sub1Storyboard.storyboard in Resources */,
 				047B2A9515A0888F00EFE585 /* Sub2Storyboard.storyboard in Resources */,
+				B402676E175E42CB00A3C402 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +205,7 @@
 				047B2A9D15A08A5E00EFE585 /* Sub1Scene2ViewController.m in Sources */,
 				047B2AA015A08A7300EFE585 /* Sub2Scene1ViewController.m in Sources */,
 				047B2AA315A08A8800EFE585 /* Sub2Scene2ViewController.m in Sources */,
+				B402676C175E3CBE00A3C402 /* UIViewController+UIViewController_iOS4Compatible.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CallOtherStoryBoardSample/CallOtherStoryBoardSample-Prefix.pch";
 				INFOPLIST_FILE = "CallOtherStoryBoardSample/CallOtherStoryBoardSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,6 +294,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CallOtherStoryBoardSample/CallOtherStoryBoardSample-Prefix.pch";
 				INFOPLIST_FILE = "CallOtherStoryBoardSample/CallOtherStoryBoardSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

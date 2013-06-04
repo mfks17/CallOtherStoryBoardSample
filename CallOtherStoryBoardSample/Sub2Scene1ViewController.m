@@ -7,6 +7,7 @@
 //
 
 #import "Sub2Scene1ViewController.h"
+#import "UIViewController+UIViewController_iOS4Compatible.h"
 
 @interface Sub2Scene1ViewController ()
 
@@ -43,6 +44,6 @@
 - (IBAction)goMainSB:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle mainBundle]];
     UIViewController *controller = [storyBoard instantiateInitialViewController];
-    [self presentModalViewController:controller animated:YES];
+    [self iOS4_presentViewController:controller animated:YES completion:nil];
 }
 @end

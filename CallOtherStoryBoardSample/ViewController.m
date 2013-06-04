@@ -11,6 +11,7 @@
 #import "Sub1Scene2ViewController.h"
 #import "Sub2Scene1ViewController.h"
 #import "Sub2Scene2ViewController.h"
+#import "UIViewController+UIViewController_iOS4Compatible.h"
 
 @interface ViewController ()
 
@@ -38,25 +39,25 @@
 - (IBAction)goSub1Scene1:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Sub1Storyboard" bundle:[NSBundle mainBundle]];
     Sub1Scene1ViewController *controller = [storyBoard instantiateInitialViewController];
-    [self presentModalViewController:controller animated:YES];
+    [self iOS4_presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)goSub1Scene2:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Sub1Storyboard" bundle:[NSBundle mainBundle]];
     Sub1Scene2ViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"sub1"];
-    [self presentModalViewController:controller animated:YES];
+    [self iOS4_presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)goSub2Scene1:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Sub2Storyboard" bundle:[NSBundle mainBundle]];
     Sub2Scene1ViewController *controller = [storyBoard instantiateInitialViewController];
-    [self presentModalViewController:controller animated:YES];
+    [self iOS4_presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)goSub2Scene2:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Sub2Storyboard" bundle:[NSBundle mainBundle]];
     Sub2Scene2ViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"sub2"];
-    [self presentModalViewController:controller animated:YES];
+    [self iOS4_presentViewController:controller animated:YES completion:nil];
 }
 
 @end
